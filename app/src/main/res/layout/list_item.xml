@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A0000000"
+
+    >
+    
+    <ImageView
+        android:id="@+id/image_list_song"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    
+    <TextView
+        android:id="@+id/title_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_list_song"
+        android:layout_toEndOf="@+id/image_list_song"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:singleLine="true"
+        android:layout_marginTop="0dp"
+        android:text="The sun and the water"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_song"
+        android:layout_toRightOf="@+id/image_list_song"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Huynh Ngo Anh Thao"
+        />
+
+</RelativeLayout>

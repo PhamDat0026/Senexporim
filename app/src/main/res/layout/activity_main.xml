@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rainbow_change_color"
+    android:id="@+id/rlt_parent_layout"
+    android:weightSum="6"
+    tools:context="com.thao.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlt_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#A0000000"
+        >
+
+
+        <TextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imgSong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:duplicateParentState="true"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-condensed"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Huynh Ngo Anh Thao"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28sp">
+
+            <requestFocus
+                android:duplicateParentState="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/imgSong"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSong"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Huynh Ngo Anh Thao"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <SeekBar
+
+            android:id="@+id/sbSong"
+            android:layout_width="match_parent"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/custom_seekbar_thumb"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+
+            android:layout_alignParentBottom="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/ic_prev"/>
+
+            <ImageButton
+
+                android:id="@+id/btnPlay"
+                android:src="@drawable/ic_play_circle_filled_black_24dp"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_next"
+                android:background="@null"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
